@@ -1,7 +1,8 @@
 name: Nix CI with BuildJet backend
-on:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+# 
 env:
   pin_nixpkgs: nix registry pin nixpkgs github:NixOS/nixpkgs/def3da69945bbe338c373fddad5a1bb49cf199ce
   # required for gh

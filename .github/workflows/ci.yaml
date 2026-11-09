@@ -1,17 +1,18 @@
 name: Nix CI
-on:
-  push:
-    # don't run on tags, run on commits
-    # https://github.com/orgs/community/discussions/25615
-    tags-ignore:
-      - "**"
-    branches:
-      - main
-  pull_request:
-  schedule:
-    - cron: 0 0 * * *
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     # don't run on tags, run on commits
+#     # https://github.com/orgs/community/discussions/25615
+#     tags-ignore:
+#       - "**"
+#     branches:
+#       - main
+#   pull_request:
+#   schedule:
+#     - cron: 0 0 * * *
+#   workflow_dispatch:
+# 
 env:
   pin_nixpkgs: nix registry pin nixpkgs github:NixOS/nixpkgs/def3da69945bbe338c373fddad5a1bb49cf199ce
   # required for gh

@@ -1,6 +1,7 @@
-on:
-  workflow_call:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_call:
+# 
 jobs:
   collision:
     name: Restore and save cache with hash collision
